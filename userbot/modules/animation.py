@@ -1207,24 +1207,6 @@ async def _(event):
             await event.edit(animation_chars[i % 6])
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"kode tangan(?: |$)(.*)"))
-async def _(typew):
-    await typew.edit("kode tangan 🤔 ? Apa itu...penasaran kan")
-    sleep(2)
-    await typew.edit("`☝`")
-    sleep(1)
-    await typew.edit("`✌`")
-    sleep(1)
-    await typew.edit("`☝ + ✌`")
-    sleep(1)
-    await typew.edit("`✌ + ✌`")
-    sleep(1)
-    await typew.edit("`✌ + ✌ + ☝`")
-    sleep(1)
-    await typew.edit("`🖐😅`")
-    sleep(1)
-    
-
 CMD_HELP.update(
     {
         "animasi": f"`{cmd}gabut` ; `{cmd}dino`\
@@ -1259,7 +1241,5 @@ CMD_HELP.update(
     \nUsage: liat sendiri\
     \n\n`{cmd}santet`\
     \nUsage: Santet Online Buat Bercanda."
-    \n\n`{cmd}kodetgn`\
-    \nUsage: cilukk baa🖐😅.\
     }
 )
